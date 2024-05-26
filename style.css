@@ -1,0 +1,288 @@
+/*estilo geral */
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box ;
+    font-family: "Sedan SC", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+
+body{
+    background-color: black;
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+h2.titulo{
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+
+}
+h2.titulo span{
+    color: blue;
+}
+button:hover{
+    box-shadow: 0px 0px 8px #4c00fc;
+    transform: scale(1.05);
+    text-align: center;
+}
+
+
+
+/*estilo cabeçalho */
+
+header{
+    padding: 40px 4%; 
+
+}
+
+header>.interface{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: rgb(182, 182, 182);
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+    
+}
+
+header nav ul{
+    list-style-type: none;
+
+}
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+ .btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 200;
+    background-color: blue;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .6s;
+    color: #fff;   
+}
+
+header a:hover{
+    color: #fff;
+    transform: scale(1.20);
+}
+
+/*ESTILO TOP DE SITE */
+
+section.topo-de-site{
+    padding: 10px 2%;
+}
+
+section.topo-de-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-de-site h1{
+    color: #fff;
+    font-size: 42px;
+    line-height: 40x;
+}
+.topo-de-site .txt-topo-site h1 span{
+    color: blue;
+}
+
+.topo-de-site .txt-topo-site p{
+    color: #fff;
+    margin:  40px 10px;
+    
+}
+
+.topo-de-site .img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+/*ESTILO ESPECIALIDADES*/
+
+section.especialidades{
+    padding: 40px 4%;
+    text-align: center;
+    
+}
+
+section.especialidades .flex{
+    gap: 60px;
+}
+
+.especialidades .especialidades-box{
+    color: #fff;   
+    padding: 40px; 
+    border-radius: 20px;
+    margin-top: 45px;
+}
+
+.especialidades .especialidades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #fff;
+    
+}
+
+.especialidades .especialidades-box i{
+    font-size: 70px;
+    color: blue;
+    align-self: center;
+}
+.especialidades .especialidades-box h3{
+    font-size: 29px;
+    margin: 15px 0;
+}
+
+/* ESITLO SOBRE */
+
+section.sobre{
+    padding: 80px 4%;
+}
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+ .sobre .text-sobre{
+    color: #fff;
+}
+.sobre .text-sobre h2{
+    font-size: 40px; 
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+.sobre .text-sobre h2 span{
+    color: blue;
+    display: block;
+}
+
+.sobre .text-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.sobre .text-sobre .btn-social button{
+
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: none;
+        background-color: blue;
+        font-size: 22px;
+        cursor: pointer;
+        margin: 0 8px;
+        transition: .2s;
+}
+/*perguntas */
+
+
+.faq{
+    text-align: center;
+    color: #fff;
+    padding: 1%;
+    background-color: #4c00fc;
+    font-size: 30px;
+}
+.perguntas{
+    
+    background-color: #4c00fc;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+   
+}
+
+.perguntasc{
+    width: 600%;
+    max-width: 600px;
+}
+
+.perguntas details summary{
+    cursor: pointer;
+    padding: 2%;
+    border-bottom: #4c00fc;
+    color: #fff;
+    font-weight: 6;
+    width: 6000;   
+}
+
+.perguntas details p{
+    background-color:white ;
+    color: black;
+    padding: 2%;
+}
+
+section.formulario{
+    padding: 80px 4%;
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: rgb(29, 29, 29);
+    border: 0;
+    outline: 0;
+    padding: 25px 15px ;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+}
+
+form textarea{
+    resize: none;
+    max-height: 200px;
+}
+
+form .btn-enviar{
+    margin-top:  20px;
+    text-align: center;
+}
+form .btn-enviar input{
+    width: 120px;
+    background-color: blue;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    cursor: pointer;
+
+}
